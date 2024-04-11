@@ -1,0 +1,84 @@
+
+*** arguments:
+auto_timestamp_resolution:	True
+avi_frame_rate:	30
+batch_size:	8
+crop:	None
+cs_lambda_pixels:	None
+cs_tau_p_ms:	None
+cutoff_hz:	0.0
+ddd_output:	False
+disable_slomo:	False
+dvs1024:	False
+dvs128:	False
+dvs240:	False
+dvs346:	False
+dvs640:	False
+dvs_aedat2:	None
+dvs_emulator_seed:	0
+dvs_exposure:	['duration', '.033']
+dvs_h5:	001.h5
+dvs_params:	None
+dvs_text:	None
+dvs_vid:	dvs-video.avi
+dvs_vid_full_scale:	2
+hdr:	False
+input:	/datas/sandbox/CKPlusDVS/S078/001
+input_frame_rate:	30.0
+input_slowmotion_factor:	1.0
+leak_jitter_fraction:	0.1
+leak_rate_hz:	0.0
+neg_thres:	0.2
+no_preview:	True
+noise_rate_cov_decades:	0.1
+output_folder:	/datas/sandbox/CKPlusDVS/S078
+output_height:	200
+output_in_place:	False
+output_width:	200
+overwrite:	True
+photoreceptor_noise:	False
+pos_thres:	0.2
+refractory_period:	0.0005
+save_dvs_model_state:	False
+scidvs:	False
+shot_noise_rate_hz:	0.0
+show_dvs_model_state:	None
+sigma_thres:	0.02
+skip_video_output:	True
+slomo_model:	/home/sbarchid/v2e/input/SuperSloMo39.ckpt
+slomo_stats_plot:	False
+start_time:	None
+stop_time:	None
+synthetic_input:	None
+timestamp_resolution:	None
+unique_output_folder:	False
+vid_orig:	video_orig.avi
+vid_slomo:	video_slomo.avi
+
+**** extra other arguments:
+
+*** command line:
+ v2e.py -i /datas/sandbox/CKPlusDVS/S078/001 -o /datas/sandbox/CKPlusDVS/S078 --overwrite --skip_video_output --unique_output_folder false --dvs_h5 001.h5 --dvs_aedat2 None --dvs_text None --no_preview --dvs_exposure duration .033 --input_frame_rate 30 --input_slowmotion_factor 1 --slomo_model input/SuperSloMo39.ckpt --auto_timestamp_resolution true --pos_thres 0.2 --neg_thres 0.2 --sigma_thres 0.02 --cutoff_hz 0 --leak_rate_hz 0 --shot_noise_rate_hz 0 --output_width=200 --output_height=2002022-12-14 12:33:46,247 - __main__ - [1;34mINFO[1;0m - opening video input file /datas/sandbox/CKPlusDVS/S078/001
+2022-12-14 12:33:46,248 - __main__ - [1;34mINFO[1;0m - --auto_timestamp_resolution=True and timestamp_resolution is not set: source video will be automatically upsampled to limit maximum interframe motion to 1 pixel
+2022-12-14 12:33:46,248 - __main__ - [1;34mINFO[1;0m - Source video /datas/sandbox/CKPlusDVS/S078/001 has total 33 frames with total duration 1.07s. 
+Source video is 30fps with slowmotion_factor 1 (frame interval 33.33ms),
+Will convert 33 frames 0 to 32
+(From 0.0s to 1.0666666666666667s, duration 1.0666666666666667s)
+2022-12-14 12:33:46,248 - __main__ - [1;34mINFO[1;0m - v2e DVS video will have constant-duration frames 
+at 30.30fps (accumulation time 33ms), 
+DVS video will have 32 frames with duration 1.06s and playback duration 1.07s
+
+2022-12-14 12:33:46,302 - __main__ - [1;34mINFO[1;0m - processing frames 0 to 32 from video input
+2022-12-14 12:33:46,303 - __main__ - [1;34mINFO[1;0m - Input video /datas/sandbox/CKPlusDVS/S078/001 has W=200 x H=200 frames each with 3 channels
+2022-12-14 12:33:46,303 - __main__ - [1;34mINFO[1;0m - *** Stage 1/3: Resizing 33 input frames to output size (with possible RGB to luma conversion)
+2022-12-14 12:33:46,306 - __main__ - [1;34mINFO[1;0m - 
+Converting input frames from RGB color to luma
+2022-12-14 12:33:46,324 - __main__ - [1;34mINFO[1;0m - *** Stage 2/3: SloMo upsampling from /tmp/tmp9hzs2yce
+2022-12-14 12:33:51,615 - __main__ - [1;34mINFO[1;0m - SloMo average upsampling factor= 4.25; average DVS timestamp resolution=7.84ms
+2022-12-14 12:33:51,616 - __main__ - [1;34mINFO[1;0m - *** Stage 3/3: emulating DVS events from 136 frames
+2022-12-14 12:33:52,147 - __main__ - [1;34mINFO[1;0m - generated total 271.37k events (128.36k on, 143.01k off)
+2022-12-14 12:33:52,147 - __main__ - [1;34mINFO[1;0m - Avg event rate for N=40000 px and total time =1.067 s
+	Total: 254.41kHz (120.33kHz on, 134.07kHz off)
+	Per pixel:  6.36Hz (3.01Hz on, 3.35Hz off)
+2022-12-14 12:33:52,147 - __main__ - [1;34mINFO[1;0m - done processing 66 frames in 5.90s (11.19fr/s)
+ **************** see output folder /datas/sandbox/CKPlusDVS/S078
