@@ -160,7 +160,7 @@ https://github.com/Boubker10/demo/assets/116897761/bfdcd93e-7c3f-44dc-86ce-545f6
 ### Étape 1 : Clonage du Projet
 La première étape consiste à obtenir une copie locale du projet. Ceci est réalisé en clonant le dépôt GitHub. Le clonage est une opération cruciale car elle vous permet d'accéder à toutes les ressources du projet, y compris les scripts d'entraînement, les modèles, les utilitaires et les exigences. Utilisez la commande suivante pour cloner le projet :
 ```
-git clone https://github.com/Barchid/spiking-fer
+[git clone https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_avec_SNN
 ```
 
 
