@@ -190,7 +190,9 @@ python train.py --dataset="CKPlusDVS" --mode="snn" --fold_number=0 --edas="flip,
 Cette commande configure l'entraînement pour le dataset CKPlusDVS en utilisant un réseau de neurones à impulsions (SNN). Elle spécifie également une série de transformations d'augmentation des données pour améliorer la robustesse et la performance du modèle. Les résultats de cet entraînement, y compris le modèle le mieux performant, seront sauvegardés dans le dossier experiments/, vous permettant d'évaluer l'efficacité du modèle formé.
 
 
-## 🧪 Résultat et Interprétation
+## 🧪Évaluation 
+
+
 
 
 
