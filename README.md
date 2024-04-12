@@ -45,7 +45,7 @@ Afin d'assurer la meilleure compatibilité et performance pour l'entraînement d
 
 1. **Clonez le dépôt** :
 ```
-git clone <url-du-projet>
+git clone https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_avec_SNN
 ```
 3. **Installez les dépendances nécessaires** :
  ```
