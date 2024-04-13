@@ -190,8 +190,28 @@ python train.py --dataset="CKPlusDVS" --mode="snn" --fold_number=0 --edas="flip,
 Cette commande configure l'entraînement pour le dataset CKPlusDVS en utilisant un réseau de neurones à impulsions (SNN). Elle spécifie également une série de transformations d'augmentation des données pour améliorer la robustesse et la performance du modèle. Les résultats de cet entraînement, y compris le modèle le mieux performant, seront sauvegardés dans le dossier experiments/, vous permettant d'évaluer l'efficacité du modèle formé.
 
 
-## 🧪Évaluation 
+## 🧪Évaluation et Test 
 
+### Configuration de l'évaluation
+Pour évaluer notre modèle, nous utilisons un ensemble de transformations définies pour les données d'entrée, via la classe `DVSTransform`. Cette classe applique une série de transformations spécifiques adaptées à nos données, incluant :
+
+- flip : retournement des images
+- background_activity : modification de l'activité de fond
+- crop : découpe des images
+- reverse : inversion des séquences
+- mirror : effet miroir
+- event_drop : suppression d'événements
+
+Ces transformations sont adaptées à la taille du capteur des données `FerDVS` et configurées pour concaténer les canaux temporels dans un format `snn`, adapté pour les réseaux de neurones spiking.
+
+### Chargement du modèle
+Nous rechargeons le modèle à partir d'un checkpoint sauvegardé (`checkpoint_path`), après un entraînement préalable sur des données spécifiques. Le modèle utilise une architecture de réseau de neurones spiking (SNN), avec plusieurs couches de convolution et des noeuds de type Integrate-and-Fire, simulant le comportement de neurones biologiques.
+
+### Préparation des données pour l'évaluation
+Pour tester le modèle, nous chargeons un exemple de données sous forme d'événements depuis un fichier `.h5`. Ces événements sont ensuite filtrés et transformés pour correspondre aux entrées attendues par notre modèle. Les données transformées sont converties en tenseurs PyTorch, adaptées à la dimension attendue par le modèle avant leur soumission pour évaluation.
+
+### Test du modèle
+Le modèle est mis en mode évaluation (`model.eval()`), avec le calcul du gradient désactivé pour optimiser les performances pendant les tests. Les données préparées sont soumises au modèle pour obtenir des prédictions. Ces prédictions sont ensuite traitées avec une fonction softmax pour convertir les logits en probabilités. La classe avec la probabilité la plus élevée est sélectionnée comme prédiction finale.
 
 
 
