@@ -225,7 +225,7 @@ https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_a
 
 
 
-## Projet: Défis Rencontrés et Solutions Apportées
+## [🔰 Projet: Défis Rencontrés et Solutions Apportées
 
 Durant notre projet, nous avons fait face à plusieurs défis qui ont testé notre capacité d'adaptation et notre ingéniosité. Voici un aperçu des obstacles rencontrés et des solutions que nous avons mises en œuvre pour les surmonter.
 
@@ -263,7 +263,7 @@ Nous avons élaboré des stratégies particulières pour gérer ces transformati
 
 
 
-## Guide de Contribution
+## 👊 Guide de Contribution
 
 Nous encourageons les contributions visant à améliorer et à automatiser les fonctionnalités de notre projet. Une des améliorations potentielles serait d'automatiser le traitement des fichiers h5 pour faciliter leur utilisation directe comme entrées de notre modèle entraîné. Voici comment vous pouvez contribuer à ce processus.
 
