@@ -213,13 +213,14 @@ Pour tester le modèle, nous chargeons un exemple de données sous forme d'évé
 ### Test du modèle
 Le modèle est mis en mode évaluation (`model.eval()`), avec le calcul du gradient désactivé pour optimiser les performances pendant les tests. Les données préparées sont soumises au modèle pour obtenir des prédictions. Ces prédictions sont ensuite traitées avec une fonction softmax pour convertir les logits en probabilités. La classe avec la probabilité la plus élevée est sélectionnée comme prédiction finale.
 
+#### Inférence du modèle sur un exemple 
 
 https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_avec_SNN/assets/116897761/1f7bbb83-441b-4985-ac7a-79cd79973ffa
 
 
 
 
-### Matrice de confusion 
+#### Matrice de confusion 
 
 
 
