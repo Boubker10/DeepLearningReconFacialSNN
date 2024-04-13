@@ -225,6 +225,42 @@ https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_a
 
 
 
+## Projet: Défis Rencontrés et Solutions Apportées
+
+Durant notre projet, nous avons fait face à plusieurs défis qui ont testé notre capacité d'adaptation et notre ingéniosité. Voici un aperçu des obstacles rencontrés et des solutions que nous avons mises en œuvre pour les surmonter.
+
+### Contraintes Matérielles et Collaboration
+
+#### Problématique
+L'un de nos ordinateurs ne disposait pas de GPU, ce qui limitait significativement nos capacités de calcul pour l'entraînement des modèles.
+
+#### Solution
+Nous avons renforcé notre collaboration en organisant des réunions régulières et en partageant notre code via GitHub. Cela nous a permis de répartir les tâches de calcul entre les membres de l'équipe qui disposaient des ressources matérielles adéquates.
+
+### Configuration de l'Environnement
+
+#### Problématique
+La configuration de l'environnement GPU a posé des défis, notamment à cause de l'absence de certaines bibliothèques dans la documentation initiale et la nécessité d'utiliser des versions spécifiques pour la compatibilité.
+
+#### Solution
+Nous avons dû installer manuellement les bibliothèques nécessaires et ajuster le code pour garantir la compatibilité avec les versions requises des bibliothèques.
+
+### Problèmes de Code et d'Entraînement
+
+#### Problématique
+Des erreurs de type dans les labels ont interrompu notre progression, et la version de PyTorch Lighting que nous utilisions ne supportait pas l'early stopping de manière native.
+
+#### Solution
+Avec votre assistance, nous avons corrigé les erreurs de type et développé une méthode pour gérer deux cycles d'entraînement différents : l'un sur 500 epochs et l'autre sur 1000, afin de comparer les performances.
+
+### Inférence et Transformations de Données
+
+#### Problématique
+Le traitement des données d'événements pour l'inférence était complexe en raison de leur nature spécifique.
+
+#### Solution
+Nous avons élaboré des stratégies particulières pour gérer ces transformations, en utilisant des visualisations pour comprendre et ajuster notre approche, ce qui a significativement amélioré les performances du modèle.
+
 
 
 
