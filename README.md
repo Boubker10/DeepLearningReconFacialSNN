@@ -263,7 +263,9 @@ Nous avons élaboré des stratégies particulières pour gérer ces transformati
 
 
 
+## Guide de Contribution
 
+Nous encourageons les contributions visant à améliorer et à automatiser les fonctionnalités de notre projet. Une des améliorations potentielles serait d'automatiser le traitement des fichiers h5 pour faciliter leur utilisation directe comme entrées de notre modèle entraîné. Voici comment vous pouvez contribuer à ce processus.
 
 
 
