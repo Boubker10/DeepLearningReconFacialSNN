@@ -225,7 +225,7 @@ https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_a
 
 
 
-## [🔰 Projet: Défis Rencontrés et Solutions Apportées
+## 🔰 Projet: Défis Rencontrés et Solutions Apportées
 
 Durant notre projet, nous avons fait face à plusieurs défis qui ont testé notre capacité d'adaptation et notre ingéniosité. Voici un aperçu des obstacles rencontrés et des solutions que nous avons mises en œuvre pour les surmonter.
 
