@@ -220,8 +220,11 @@ https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_a
 
 
 
-#### Matrice de confusion 
+#### Matrice de confusion et Rapport de classification 
 
+![WhatsApp Image 2024-04-14 at 00 16 14](https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_avec_SNN/assets/116897761/68d8f496-a661-4de6-9f05-c1e71065d27a)
+
+![WhatsApp Image 2024-04-14 at 00 16 14 (1)](https://github.com/Boubker10/Projet_P6_Reconnaissance_des_Expressions_Faciales_avec_SNN/assets/116897761/51984ec9-e999-4143-8e0a-cb396f7fc57d)
 
 
 
