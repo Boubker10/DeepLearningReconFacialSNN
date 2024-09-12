@@ -14,7 +14,7 @@ import numpy as np
 batch_size = 32
 learning_rate = 5e-3
 timesteps = 6
-epochs = 1
+epochs = 64
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = "data"
 global X
