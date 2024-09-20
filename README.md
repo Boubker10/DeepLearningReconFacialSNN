@@ -250,9 +250,3 @@ Nous encourageons les contributions visant à améliorer et à automatiser les f
 
 
 
-##  🧑‍💻 Contributing 
-```
-@title={Spiking-Fer: Spiking Neural Network for Facial Expression Recognition With Event Cameras},
-  author={Boubker BENNANI , Othmane BENZARHOUNI},
-  year={2024}
-}
